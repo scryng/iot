@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar{
+    @apply flex flex-col w-64 bg-gray-800 h-screen text-white p-4;
+}
+
+.navlink{
+    @apply mb-4 p-2 rounded hover:bg-gray-700;
+}
+
+.navlink.active {
+    @apply bg-gray-700;
+}
