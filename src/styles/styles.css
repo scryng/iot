@@ -2,14 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-.navbar{
+.sidebar {
     @apply flex flex-col w-64 bg-gray-800 h-screen text-white p-4;
 }
 
-.navlink{
-    @apply mb-4 p-2 rounded hover:bg-gray-700;
+.navbar {
+    @apply flex flex-col justify-between;
+}
+
+.navbar-top, .navbar-bottom {
+    @apply flex flex-col;
+}
+
+.navbar-bottom hr {
+    @apply mb-4;
+}
+
+.navlink {
+    @apply mb-4 p-2 rounded;
+}
+
+.navlink:hover {
+    @apply bg-gray-700;
 }
 
 .navlink.active {
     @apply bg-gray-700;
+}
+
+.header {
+    @apply w-full bg-gray-800 p-4 flex justify-between items-center;
+}
+
+.header-left {
+    @apply text-2xl text-white;
+}
+
+.header-right {
+    @apply text-white m-1;
+}
+
+.username {
+    @apply flex gap-3 items-center;
+}
+
+.username.photo {
+    @apply rounded-full pt-1 pb-1;
 }

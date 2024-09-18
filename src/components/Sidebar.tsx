@@ -1,20 +1,21 @@
 'use client'
-
-import Link from "next/link";
 import '../styles/styles.css';
-import { usePathname } from "next/navigation";
+import Image from "next/image";
+import Navbar from "@/components/Navbar";
 
 export default function Sidebar() {
-  const pathname = usePathname();
 
   return (
-    <div>
-      <nav className="navbar">
-        <Link href="/" className={`navlink ${pathname === '/' ?'active':''}`}>Home</Link>
-        <Link href="/users" className={`navlink ${pathname === '/users' ?'active':''}`}>Usuários</Link>
-        <Link href="/sensors" className={`navlink ${pathname === '/sensors' ?'active':''}`}>Sensores</Link>
-        <Link href="/reports" className={`navlink ${pathname === '/reports' ?'active':''}`}>Relatórios</Link>
-      </nav>
-    </div>
+      <aside className="sidebar">
+        <Image
+          src="/images/logotipo.png"
+          width={100} // Resolução da Imagem
+          height={100}
+          className="w-full mb-4 rounded-lg"
+          alt="Logotipo"
+        />
+
+        <Navbar />
+      </aside>
   );
 }
