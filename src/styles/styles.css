@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .sidebar {
     @apply flex flex-col w-64 bg-gray-800 h-screen text-white p-4;
 }
 
 .navbar {
-    @apply flex flex-col justify-between;
+    @apply flex-1 h-full flex flex-col justify-between;
 }
 
 .navbar-top, .navbar-bottom {
@@ -48,4 +49,24 @@
 
 .username.photo {
     @apply rounded-full pt-1 pb-1;
+}
+
+.card {
+    @apply bg-gray-300 p-4 rounded-lg w-full;
+}
+
+.card-header {
+    @apply border-b-2 border-gray-900;
+}
+
+.card-footer {
+    @apply border-t-2 border-gray-900 text-sm;
+}
+
+.card-top {
+    @apply flex-1 w-auto flex gap-2 justify-around;
+}
+
+.card-bottom {
+    @apply flex-1 w-auto flex gap-2 justify-around;
 }

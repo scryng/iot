@@ -6,7 +6,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div>
+    <div className="flex-1">
       <nav className="navbar">
         <div className="navbar-top">
           <Link href="/" className={`navlink ${pathname === '/' ? 'active' : ''}`}>
