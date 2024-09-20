@@ -1,15 +1,15 @@
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
+import UserCard from "@/components/UserCard";
 
 export default function User() {
   return (
-    <div className="flex">
+    <div className="flex h-screen">
       <Sidebar />
-
-      <div className="flex-1">
+      <div className="flex-1 flex flex-col">
         <Header title="Usuários" username="Gustavo Sousa" />
-        <main>
-          <h1>Lista dos usuários</h1>
+        <main className="p-4 flex flex-1 flex-col gap-4">
+          <UserCard />
         </main>
       </div>
     </div>

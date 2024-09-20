@@ -26,6 +26,7 @@ export default function Home() {
             {/* <Card /> */}
             <LineChart />
             <DashDataTable />
+            {/* <Polar /> */}
           </div>
         </main>
       </div>
