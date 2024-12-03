@@ -52,7 +52,7 @@
 }
 
 .card {
-    @apply bg-gray-300 p-4 rounded-lg w-full;
+    @apply bg-slate-700 p-4 rounded-lg w-full;
 }
 
 .card-header {

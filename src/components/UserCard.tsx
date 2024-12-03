@@ -31,7 +31,7 @@ export default function UserCard() {
   return (
     <div className="grid grid-cols-5 gap-4">
       {users.map((user) => (
-        <div key={user.id} className="cardUser bg-gray-300 rounded-lg flex flex-col justify-between p-4">
+        <div key={user.id} className="cardUser bg-slate-700 rounded-lg flex flex-col justify-between p-4">
           <div className="userHeader flex flex-col items-center text-white mb-4">
             <div className="userImage w-16 h-16 bg-green-600 rounded-full mb-2"></div>
             <h3 className="text-lg font-semibold">{user.name}</h3>
